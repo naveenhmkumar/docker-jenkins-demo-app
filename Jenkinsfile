@@ -8,7 +8,7 @@ pipeline {
             steps { 
                echo 'This is a minimal pipeline.' 
                 sh 'mvn --version'
-                sh 'ssh -i /.ssh/kumarhmweb bestcows.xyz'
+                sh 'pwd'
                 sh 'mkdri -p'
             }
         }
