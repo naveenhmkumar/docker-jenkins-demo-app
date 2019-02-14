@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'pwd'
                 sh 'cd'
-                sh 'mkdir -p'
+                sh 'mkdir -p deleteme'
                 sh 'pwd'
             }
         }
