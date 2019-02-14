@@ -4,7 +4,7 @@ node {
   }
   
   stage('package'){
-  docker.build('naveenhm/nginx').push()
+  docker.build('kohsuke/acmecorp-app').push()
   }
   stage 'deploy'
   sh './deploy.sh'
