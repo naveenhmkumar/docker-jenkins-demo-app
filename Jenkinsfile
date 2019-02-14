@@ -1,5 +1,7 @@
 node {
-  stage 'build'
+  stage('build'){
+    echo ' Image is building man'
+  }
   
   stage 'package'
   docker.build('naveenhm/nginx').push()
