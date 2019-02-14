@@ -8,7 +8,8 @@ pipeline {
             steps { 
                echo 'This is a minimal pipeline.' 
                 sh 'mvn --version'
-                sh 'ping google.com'
+                sh 'ssh -i .ssh/kumarhmweb'
+                sh 'mkdri -p'
             }
         }
     }
