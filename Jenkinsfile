@@ -9,7 +9,9 @@ pipeline {
                echo 'This is a minimal pipeline.' 
                 sh 'mvn --version'
                 sh 'pwd'
+                sh 'cd'
                 sh 'mkdri -p'
+                sh 'pwd'
             }
         }
     }
