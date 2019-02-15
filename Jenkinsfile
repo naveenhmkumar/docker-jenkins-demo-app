@@ -11,7 +11,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls' 
                 sh 'ssh -i kumarnhmweb  -T ec2-user@172.31.22.138'
-		    ls
+		    sh 'ls'
                 sh 'ls -al'
                 sh 'exit'
                 sh 'exit'
