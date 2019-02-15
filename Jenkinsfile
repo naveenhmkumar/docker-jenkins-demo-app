@@ -10,7 +10,7 @@ pipeline {
                 sh 'mvn --version'
                 sh 'pwd'
                 sh 'ls' 
-                sh 'ssh -i kumarnhmweb-tt ec2-user@172.31.22.138'
+                sh 'ssh -i kumarnhmweb -tt ec2-user@172.31.22.138'
                 
             }
         }
