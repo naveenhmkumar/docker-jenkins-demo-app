@@ -9,7 +9,7 @@ pipeline {
                echo 'This is a minimal pipeline.' 
                 sh 'mvn --version'
                 sh 'pwd'
-                sh 'ssh ec2@172.31.22.138'
+                sh 'ssh -tt ec2@172.31.22.138'
                 sh 'ls' 
             }
         }
