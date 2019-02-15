@@ -13,6 +13,7 @@ pipeline {
                 sh 'ssh -i kumarnhmweb ec2-user@172.31.22.138'
                 sh 'ls -al'
                 sh 'exit'
+                sh 'ls -al'
                 
             }
         }
