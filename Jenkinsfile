@@ -17,12 +17,13 @@ pipeline {
                 sh 'ls -al'
                 
             }
-            stage('deploy'){
-                steps{
-                sh 'ls'
+	    }
+        stage('deploy'){
+                steps {
+                  sh 'ls'
                 }
             }
-        }
     }
 }
+
  
