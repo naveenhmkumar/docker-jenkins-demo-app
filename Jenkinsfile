@@ -1,17 +1,12 @@
 pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo 'Hello World'
-
-                script {
-                    def browsers = ['chrome', 'firefox']
-                    for (int i = 0; i < browsers.size(); ++i) {
-                        echo "Testing the ${browsers[i]} browser"
-                    }
-                }
-            }
-        }
+    agent {
+    // Equivalent to "docker build -f Dockerfile.build --build-arg version=1.0.2 ./build/
+    dockerfile {
+        filename 'Dockerfile.build'
+        dir 'build'
+        label 'my-defined-label'
+        additionalBuildArgs  '--build-arg version=1.0.2'
+        args '-v /tmp:/tmp'
     }
+
 }
