@@ -1,9 +1,10 @@
 pipeline {
-    
-        stage("Docker') {
-              steps{
-              echo 'Hello Boss'
+    agent any 
+    stages {
+        stage('build') {
+            steps {
+                sh 'mvn --version'
             }
         }
-    
+    }
 }
