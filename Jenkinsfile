@@ -1,7 +1,9 @@
 pipeline{
     stages{
-        stage("Docker'){
+        stage("Docker') {
+              steps{
               echo 'Hello Boss'
+              }
               }
               }
               }
