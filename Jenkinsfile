@@ -17,6 +17,8 @@ pipeline {
                 sh 'ls -al'
                 
             }
+            steps{
+                sh 'ls'
         }
     }
 }
